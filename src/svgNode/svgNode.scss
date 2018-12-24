@@ -1,0 +1,88 @@
+$blue: #289de9;
+
+.content-wrap {
+    width: 180px;
+    height: 30px;
+    background-color: hsla(0, 0%, 100%, 0.9);
+    border: 1px solid $blue;
+    border-radius: 15px;
+    font-size: 12px;
+    transition: background-color 0.2s;
+    user-select: none;
+}
+
+.content {
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+
+    .title {
+        flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.in-slot,
+.out-slot {
+    height: 1px;
+    clear: both;
+
+    .port-wrap {
+        height: 1px;
+        float: left;
+    }
+
+    .pane-port {
+        width: 10px;
+        height: 10px;
+        float: right;
+        margin-right: -5px;
+        border: 1px solid gray;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: background-color 0.2s;
+    }
+
+    .port-magnet {
+        float: left;
+        width: 20px;
+        height: 20px;
+        margin-top: -6px;
+        margin-left: -6px;
+        background-color: transparent;
+        border-radius: 50%;
+    }
+}
+
+.in-slot {
+    margin-top: -36px;
+
+    .pane-port {
+        cursor: default;
+    }
+}
+
+.in-slot-proxy {
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    top: 2px;
+
+    .slot-proxy-item {
+        flex: 1;
+        height: 100%;
+    }
+}
+
+.out-slot {
+    margin-top: 29px;
+
+    .pane-port {
+        cursor: crosshair;
+    }
+}

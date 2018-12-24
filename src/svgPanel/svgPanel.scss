@@ -1,0 +1,53 @@
+.svg-panel {
+    cursor: pointer;
+}
+
+.path {
+    stroke: #ccc;
+    fill: none;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    cursor: pointer;
+
+    &:hover {
+        stroke: #09f;
+    }
+}
+
+.path-marker {
+    &:hover {
+        fill: #09f;
+    }
+}
+
+:global .svg-tool {
+    position: absolute;
+    right: 10px;
+    top: -6px;
+    background: #e8e8e85c;
+    cursor: pointer;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 10px;
+
+    span:not(:last-child) {
+        padding-right: 15px;
+    }
+}
+
+:global .svg-fullscreen {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    z-index: 777;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #e8e8e8;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+
+    .svg-tool {
+        top: 10px;
+    }
+}

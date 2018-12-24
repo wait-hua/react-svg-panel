@@ -1,0 +1,22 @@
+.panel-line {
+    &:hover {
+        .line {
+            stroke: #09f;
+            stroke-width: 4px;
+        }
+    }
+}
+
+.line-wrap {
+    fill: none;
+    stroke: hsla(0, 0%, 100%, 0);
+    stroke-width: 15px;
+}
+
+.line {
+    stroke: #ccc;
+    fill: none;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    cursor: pointer;
+}
